@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --font-size-xs: 0.75rem;
+    --font-size-s: 1rem;
+    --font-size-m: 1.25rem;
+    --font-size-l: 1.5rem;
+    --font-size-xl: 3rem;
+    --font-size-xxl: 4.75rem;
+
+    --padding-xs: 0.5rem;
+    --padding-s: 1rem;
+    --padding-m: 1.5rem;
+    --padding-l: 2rem;
+    --padding-xl: 3.5rem;
+    --padding-xxl: 5rem;
+
+    --margin-xs: 0.5rem;
+    --margin-s: 1rem;
+    --margin-m: 1.5rem;
+    --margin-l: 2rem;
+    --margin-xl: 3.5rem;
+    --margin-xxl: 5rem;
+
+    --gap-xs: 0.5rem;
+    --gap-s: 1rem;
+    --gap-m: 1.5rem;
+    --gap-l: 2rem;
+    --gap-xl: 3.5rem;
+    --gap-xxl: 5rem;
+
+    --azul-turquesa: #026E81;
+    --azul-turquesa-claro: #00abbd;
+    --bg-azul-turquesa-claro: rgba(0, 171, 189, .5);
+    --azul: #0099dd;
+    --laranja: #ff9933;
+    --azul-claro: #8bd5ee;
+    --bg-bublles: rgba(255, 255, 255, 0.6);
+    --black: #292323;
+    --roboto: "Roboto", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body {
+    background-image: url(../img/bg-primary.png);
+    background-repeat: repeat;
+    font-family: var(--roboto);
+    background-color: var(--azul-claro);
+}
+
+.section {
+    background: var(--bg-black-900);
+    min-height: 100vh;
+    display: block;
+    padding: 0 30px;
+    opacity: 1;
+    position: fixed;
+    left: 17rem;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 570px) {
+    .section {
+        left: 0;
+    }
+}

@@ -1,0 +1,22 @@
+.frame-speechBubbles {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.dino {
+    width: 50%;
+}
+
+.dino img {
+    width: 100%;
+}
+
+.speechBubbles {
+    background-color: var(--bg-bublles);
+    text-align: center;
+    width: 70vw;
+    padding: 3rem;
+    border-radius: 10px 60px 60px 60px;
+    color: var(--black);
+}
