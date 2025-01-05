@@ -1,0 +1,15 @@
+.pregnancy {
+    background-image: url(../img/bg-primary.png);
+    background-repeat: repeat;
+    font-family: var(--roboto);
+    background-color: var(--azul-claro);
+}
+
+.teste-pregnancy {
+    width: 450px;
+    margin: 25% auto;
+}
+
+.teste-pregnancy img {
+    width: 100%;
+}

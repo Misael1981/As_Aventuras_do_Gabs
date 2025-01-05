@@ -1,5 +1,12 @@
 @import url('../css/speechBubbles.css');
 
+.home {
+    background-image: url(../img/bg-primary.png);
+    background-repeat: repeat;
+    font-family: var(--roboto);
+    background-color: var(--azul-claro);
+}
+
 .home h1 {
     font-size: var(--font-size-xl);
     letter-spacing: 2px;

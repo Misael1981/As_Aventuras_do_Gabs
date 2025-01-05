@@ -48,10 +48,7 @@
 }
 
 body {
-    background-image: url(../img/bg-primary.png);
-    background-repeat: repeat;
     font-family: var(--roboto);
-    background-color: var(--azul-claro);
 }
 
 .section {
@@ -69,6 +66,29 @@ body {
     overflow-y: auto;
     overflow-x: hidden;
     transition: all 0.3s ease;
+}
+
+.section.back-section {
+    z-index: 1;
+}
+
+.section.active {
+    z-index: 2;
+    opacity: 1;
+    animation: slideSection 1s ease;
+}
+
+.hidden {
+    display: none !important;
+}
+
+@keyframes slideSection {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
 }
 
 @media screen and (max-width: 570px) {
